@@ -1,0 +1,25 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "MinGWpresets",
+            "displayName": "GCC 6.3.0 mingw32",
+            "description": "使用编译器: C = E:\\Environments\\MinGW\\bin\\gcc.exe, CXX = E:\\Environments\\MinGW\\bin\\g++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "E:/Environments/MinGW/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "E:/Environments/MinGW/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "MinGWpresets",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "MinGWpresets"
+        }
+    ]
+}
